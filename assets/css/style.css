@@ -109,7 +109,7 @@ nav a {
     display: inline-block; 
 }
 
-nav li:last-of-type a {
+nav li:last-of-type {
     border-right: none;
 }
 
@@ -137,7 +137,6 @@ nav a.active:active {
     margin: 0 0 40px 0;
     border: 1px solid #666;
 }
-
 
 /* Main Section */
 section {
