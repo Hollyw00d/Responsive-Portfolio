@@ -222,15 +222,24 @@ body.contact button {
     padding: 10px 30px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 640px) {
     /* Header */
-    #header-wrapper {
-        border: 1px solid #666;
-        border-width: 0 0 2px 0;
+    header {
+        height: auto;
+        overflow: auto;
     }
 
     #logo {
-        padding: 0 15px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav {
+        float: none;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
     }
 
     nav ul {
@@ -239,12 +248,7 @@ body.contact button {
     }
 
     nav li {
-        display: block;
         height: 18px;
     }
 
-    nav a {
-        /* padding: 0 20px; */
-        border-right: 0;
-    }
 }
