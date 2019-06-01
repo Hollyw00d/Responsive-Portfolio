@@ -46,10 +46,21 @@ a:focus {
     outline: 2px dotted #000;
 }
 
+.img-wrapper {
+    width: 30%;
+    display: inline-block;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
 
 /* Header */
 #header-wrapper {
     background: #fff;
+    border: 1px solid #666;
+    border-width: 0 0 2px 0;
 }
 
 header {
@@ -85,17 +96,17 @@ nav ul {
 
 nav li {
     display: inline-block;
+    padding: 3px 20px;
+    border-right: #efefef 1px solid;
+    line-height: 84px;
+    height: 30px;
+    line-height: 18px;
+    width: auto;  
 }
 
 nav a {
     text-decoration: none;
-    line-height: 84px;
-    display: inline-block;
-    width: auto;   
-    padding: 3px 20px;
-    border-right: #efefef 1px solid;
-    height: 30px;
-    line-height: 18px;
+    display: inline-block; 
 }
 
 nav li:last-of-type a {
@@ -130,10 +141,8 @@ nav a.active:active {
 
 /* Main Section */
 section {
-    width: 958px;
     border: 1px solid #ddd;
     background: #fff;
-    margin: 40px 0 0;
 }
 
 #main {
@@ -212,4 +221,31 @@ body.contact button {
     color: #fff;
     font-size: 18px;
     padding: 10px 30px;
+}
+
+@media all and (max-width: 768px) {
+    /* Header */
+    #header-wrapper {
+        border: 1px solid #666;
+        border-width: 0 0 2px 0;
+    }
+
+    #logo {
+        padding: 0 15px;
+    }
+
+    nav ul {
+        line-height: 15px;
+        padding: 5px 0 0;
+    }
+
+    nav li {
+        display: block;
+        height: 18px;
+    }
+
+    nav a {
+        /* padding: 0 20px; */
+        border-right: 0;
+    }
 }
